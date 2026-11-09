@@ -37,6 +37,10 @@ function App() {
         <LidorButton onClick={() => setCount((count) => count - 1)}>
           Decrease by 1
         </LidorButton>
+
+        <LidorButton onClick={() => setCount(0)}>
+          Reset counter
+        </LidorButton>
       </section>
 
       <div className="ticks"></div>
