@@ -30,8 +30,12 @@ function App() {
           Count is {count}
         </button>
 
-        <LidorButton onClick={() => setCount((count) => count - 100)}>
-          Decrease by 100
+        <LidorButton onClick={() => setCount((count) => count + 1)}>
+          Increase by 1
+        </LidorButton>
+
+        <LidorButton onClick={() => setCount((count) => count - 1)}>
+          Decrease by 1
         </LidorButton>
       </section>
 
