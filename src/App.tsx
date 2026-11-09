@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { LidorButton } from './components/LidorButton'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -28,6 +29,10 @@ function App() {
         >
           Count is {count}
         </button>
+
+        <LidorButton onClick={() => setCount((count) => count - 100)}>
+          Decrease by 100
+        </LidorButton>
       </section>
 
       <div className="ticks"></div>
